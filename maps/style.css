@@ -8,11 +8,23 @@ body {
 }
 
 #head {
-    background-color: rgba(24, 102, 191, 0.74);
-    height: 76px;
     font-family: 'Podkova', serif;
     color: #fff;
-    margin-top: -5px;
+    height: 76px;
+    position: fixed;
+    margin-top: 119px;
+}
+
+#logo {
+    position: relative;
+    margin-bottom: -54px;
+    height: 76px;
+    width: auto;
+    background: transparent;
+}
+
+#head-text {
+    text-shadow: #000 0 0 11px;
 }
 
 #map {
