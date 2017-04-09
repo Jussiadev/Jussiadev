@@ -1,0 +1,123 @@
+#form {
+    margin-top: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 23px rgba(0,0,0,0.5);
+}
+
+p {
+    padding-left: 30px;
+    padding-top: 19px;
+}
+
+#square-input {
+    width: 87px;
+    display: inline;
+    margin-right: 8px;
+}
+
+th,td {
+    text-align: center;
+    vertical-align: middle !important;
+    font-weight: 100 !important;
+}
+
+.first-th {
+    text-align: left;
+    width: 332px;
+    background-color: #f68121;
+}
+.first {
+    background-color: #f68121;
+    color: #000;
+}
+
+.col-span-cell {
+    font-size: 16pt !important;
+
+}
+
+#total {
+    font-size: 26pt !important;
+    text-align: center;
+}
+
+.btn-primary{
+    width: 360px;
+    background-color: #f68121;
+    color: #000;
+}
+
+.expense {
+    width: 87px;
+    text-align: center;
+    display: inline-table;
+}
+
+#add-dell-amount {
+    width: 44px;
+    border: 1px solid #ccc;
+}
+.btn-amount {
+    width: 10px;
+    height: 34px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #000;
+    float: left;
+}
+
+.for-text-of-btn {
+    display: inline;
+    text-align: center !important;
+}
+
+.input-group {
+    display: inline-table;
+}
+
+img {
+    padding: 29px;
+    padding-top: 5px;
+    border: 2px solid #000;
+    background-color: #fff;
+
+}
+
+.image {
+    position: relative;
+    width: 100%;
+    margin-bottom: 73px;
+}
+
+h2 {
+    position: absolute;
+    top	: 48px;
+    left: 8px;
+    width: 100%;
+    font-family: 'Kelly Slab', cursive;
+    color: #f68121;
+}
+
+body {
+    background-size: 100%;
+    background: url(fon-pic.jpg) fixed;
+    background-position-y: -89px;
+    padding-top: 14px;
+
+}
+
+.row-checked {
+    background-color: darkgrey;
+}
+
+.checkbox {
+    text-align: left;
+}
+
+input.error {
+    border-color: red;
+}
+
+ label.error {
+     color: red;
+ }
