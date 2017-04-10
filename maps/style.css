@@ -2,7 +2,7 @@ body {
     overflow-x: hidden;
     background-image: url(street.jpg);
     background-size: 100%;
-    background-position-y: -156px;
+    background-attachment: fixed;
 }
 
 #head {
@@ -60,7 +60,7 @@ body {
     height: 76px;
     font-family: 'Podkova', serif;
     color: #fff;
-    margin-top: 7px;
+    margin-top: 33px;
 }
 
 .margin-right-0 {
