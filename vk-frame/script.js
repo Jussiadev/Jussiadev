@@ -9,12 +9,14 @@ $(function() {
 
         VK.api("friends.get", {"user_id": myId, "order": "name", "fields": "photo_100, photo_id"}, function (data) {
             var users = data.response.items;
+            var photoIds = [];
             for (var i = 0; i < users.length; i++) {
-                VK.api("likes.getList",{"type": "photo","item_id": users[i].photo_id, "filter": "likes"}, function (data) {
-                    console.log(data);
-                    //users[i]['likes'] = data.response.count;
-                });
+                photoIds.push(users[i].photo_id);
             }
+            VK.api("photos.get",{"photo_ids": photoIds.join(','), "extended": 1}, function (data) {
+                console.log(data);
+                //users[i]['likes'] = data.response.count;
+            });
             new Vue ({
                el: '#app',
                data: {
