@@ -7,7 +7,13 @@ $(function() {
             $('#photo').attr("src",data.response[0].photo_100);
         });
 
-        VK.api("friends.get", {"user_id": myId, "order": "name", "fields": "photo_100"}, function (data) {
+        VK.api("friends.get", {"user_id": myId, "order": "name", "fields": "photo_100, photo_id"}, function (data) {
+            var users = data.response.items;
+            for (var i = 0; i < users.length; i++) {
+                VK.api("likes.getList",{"type": "photo","item_id":"", "filter": "likes"}, function (data) {
+                    users[i]['likes'] = data.response.count;
+                });
+            }
             new Vue ({
                el: '#app',
                data: {
