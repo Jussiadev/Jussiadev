@@ -13,7 +13,7 @@ $(function() {
             for (var i = 0; i < users.length; i++) {
                 photoIds.push(users[i].photo_id);
             }
-            VK.api("photos.get",{"photo_ids": photoIds.join(','), "extended": 1}, function (data) {
+            VK.api("photos.get",{"photo_ids": photoIds.join(','),"album_id": "profile ", "extended": 1}, function (data) {
                 console.log(data);
                 //users[i]['likes'] = data.response.count;
             });
