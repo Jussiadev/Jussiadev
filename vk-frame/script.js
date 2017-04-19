@@ -1,10 +1,19 @@
 $(function() {
     VK.init(function() {
-        VK.api("users.get", {"user_ids": "32931152", "fields": "photo_200,city"}, function (data) {
-            console.log(data);
+        var myId = 32931152;
+        VK.api("users.get", {"user_ids": "myId", "fields": "photo_200,city"}, function (data) {
             $('#name').text(data.response[0].first_name + ' ' + data.response[0].last_name + ' (' + data.response[0].id + ')');
             $('#city').text(data.response[0].city.title);
             $('#photo').attr("src",data.response[0].photo_200);
+        });
+
+        VK.api("friends.get", {"user_id": "myId", "order": "name", "fields": "photo_100"}, function (data) {
+            new Vue ({
+               el: '#app',
+               data: {
+                  items: data.response.items
+               }
+            });
         });
     }, function() {
         // API initialization failed
