@@ -10,7 +10,7 @@ $(function() {
         VK.api("friends.get", {"user_id": myId, "order": "name", "fields": "photo_100, photo_id"}, function (data) {
             var users = data.response.items;
             for (var i = 0; i < users.length; i++) {
-                VK.api("likes.getList",{"type": "photo","item_id":"", "filter": "likes"}, function (data) {
+                VK.api("likes.getList",{"type": "photo","item_id": users[i].photo_id, "filter": "likes"}, function (data) {
                     users[i]['likes'] = data.response.count;
                 });
             }
