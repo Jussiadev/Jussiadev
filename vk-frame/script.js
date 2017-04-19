@@ -1,10 +1,10 @@
 $(function() {
     VK.init(function() {
         var myId = 32931152;
-        VK.api("users.get", {"user_ids": myId, "fields": "photo_200,city"}, function (data) {
+        VK.api("users.get", {"user_ids": myId, "fields": "photo_100,city"}, function (data) {
             $('#name').text(data.response[0].first_name + ' ' + data.response[0].last_name + ' (' + data.response[0].id + ')');
             $('#city').text(data.response[0].city.title);
-            $('#photo').attr("src",data.response[0].photo_200);
+            $('#photo').attr("src",data.response[0].photo_100);
         });
 
         VK.api("friends.get", {"user_id": myId, "order": "name", "fields": "photo_100"}, function (data) {
