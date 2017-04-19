@@ -12,7 +12,7 @@ $(function() {
             for (var i = 0; i < users.length; i++) {
                 VK.api("likes.getList",{"type": "photo","item_id": users[i].photo_id, "filter": "likes"}, function (data) {
                     console.log(data);
-                    users[i]['likes'] = data.response.count;
+                    //users[i]['likes'] = data.response.count;
                 });
             }
             new Vue ({
