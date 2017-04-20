@@ -11,9 +11,9 @@ $(function() {
             var users = data.response.items;
             var photoIds = [];
             for (var i = 0; i < users.length; i++) {
-                photoIds.push(users[i].photo_id);
+                photoIds.push(users[i].user_id + '_' + users[i].photo_id);
             }
-            VK.api("photos.get",{"photo_ids": photoIds.join(','),"album_id": "profile ", "extended": 1}, function (data) {
+            VK.api("photos.getById",{"photos": photoIds.join(','), "extended": 1}, function (data) {
                 console.log(data);
                 //users[i]['likes'] = data.response.count;
             });
