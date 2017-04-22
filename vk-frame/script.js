@@ -13,7 +13,7 @@ $(function() {
                             "likes": data.response.likes.count
                         });
                     }
-                    if (max < 200) {
+                    if (max = 200) {
                         condition = false;
                         new Vue ({
                             el: '#app',
