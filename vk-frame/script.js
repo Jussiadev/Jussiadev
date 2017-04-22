@@ -12,7 +12,7 @@ $(function() {
                             "likes": data.response.likes[i].count
                         });
                     }
-                    if (max < 200) {
+                    //if (max < 200) {
                         new Vue ({
                             el: '#app',
                             data: {
@@ -20,7 +20,7 @@ $(function() {
                             }
                         });
                         break;
-                    }
+                    //}
                 }
             )}
     }, function() {
