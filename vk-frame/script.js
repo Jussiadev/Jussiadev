@@ -4,7 +4,7 @@ $(function() {
 
         var photos = [];
        // for (var offset = 0; offset < 1000; offset += 200) {
-            VK.api("photos.getAll", {"owner_id": myId, "offset":offset,"extended": 1}, function (data) {
+            VK.api("photos.getAll", {"owner_id": myId, "offset":0,"extended": 1}, function (data) {
                     for (var i = 0, max = data.response.items.length; i < max; i++) {
                         photos.push({
                             "image": data.response.items[i].photo_130,
