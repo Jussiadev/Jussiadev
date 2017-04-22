@@ -1,4 +1,4 @@
-#app {
-    overflow: auto;
-    height: 200px;
+body {
+    background: url("fon_vk_app.jpg") no-repeat;
+    background-position: 0 -386px;
 }
