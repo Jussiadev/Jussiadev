@@ -1,34 +1,32 @@
 $(function() {
     VK.init(function() {
         var myId = 32931152;
-        VK.api("users.get", {"user_ids": myId, "fields": "photo_100,city"}, function (data) {
-            $('#name').text(data.response[0].first_name + ' ' + data.response[0].last_name + ' (' + data.response[0].id + ')');
-            $('#city').text(data.response[0].city.title);
-            $('#photo').attr("src",data.response[0].photo_100);
-        });
 
-        VK.api("friends.get", {"user_id": myId, "order": "name", "fields": "photo_100, photo_id"}, function (data) {
-            var users = data.response.items;
-            var photoIds = [];
-            for (var i = 0; i < users.length; i++) {
-                photoIds.push(users[i].id + '_' + users[i].photo_id);
-            }
-            VK.api("photos.getById",{"photos": photoIds.join(','), "extended": 1}, function (data) {
-                console.log(data);
-                //users[i]['likes'] = data.response.count;
-            });
-            new Vue ({
-               el: '#app',
-               data: {
-                  items: data.response.items
-               }
-            });
-        });
+        var photos = [];
+        var condition = true;
+        for (var offset = 0; condition; offset += 200) {
+            VK.api("photos.getAll", {"owner_id": myId, "offset":offset,"extended": 1}, function (data) {
+                    for (var i = 0, max = data.response.items.length; i < max; i++) {
+                        photos.push({
+                            "image": data.response.items.photo_130,
+                            "date": data.response.items.date,
+                            "likes": data.response.likes.count
+                        });
+                    }
+                    if (max < 200) {
+                        condition = false;
+                        new Vue ({
+                            el: '#app',
+                            data: {
+                                items: photos
+                            }
+                        });
+                    }
+                }
+            )}
     }, function() {
         // API initialization failed
         // Can reload page here
     }, '5.63');
 });
-
-
 
