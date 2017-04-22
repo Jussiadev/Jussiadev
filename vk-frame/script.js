@@ -8,12 +8,12 @@ $(function() {
             VK.api("photos.getAll", {"owner_id": myId, "offset":offset,"extended": 1}, function (data) {
                     for (var i = 0, max = data.response.items.length; i < max; i++) {
                         photos.push({
-                            "image": data.response.items.photo_130,
-                            "date": data.response.items.date,
-                            "likes": data.response.likes.count
+                            "image": data.response.items[i].photo_130,
+                            "date": data.response.items[i].date,
+                            "likes": data.response.likes[i].count
                         });
                     }
-                    if (max = 200) {
+                    if (true || max < 200) { //todo убрать или
                         condition = false;
                         new Vue ({
                             el: '#app',
