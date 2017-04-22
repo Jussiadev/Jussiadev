@@ -16,12 +16,8 @@ $(function() {
                         });
                     }
                     //if (max < 200) {
-                photos = photos.sort(function(a,b) {
-                    if (a.likes < b.likes)
-                        return -1;
-                    if (a.likes > b.likes)
-                        return 1;
-                    return 0;
+                photos = photos.sort(function(a, b) {
+                    return b - a;
                 });
                         new Vue ({
                             el: '#app',
