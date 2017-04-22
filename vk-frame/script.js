@@ -9,7 +9,7 @@ $(function() {
                         photos.push({
                             "image": data.response.items[i].photo_130,
                             "date": data.response.items[i].date,
-                            "likes": data.response.likes[i].count
+                            "likes": data.response.items[i].likes.count
                         });
                     }
                     //if (max < 200) {
