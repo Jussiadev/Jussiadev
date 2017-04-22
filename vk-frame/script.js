@@ -17,7 +17,7 @@ $(function() {
                     }
                     //if (max < 200) {
                 photos = photos.sort(function(a, b) {
-                    return b - a;
+                    return b.likes - a.likes;
                 });
                         new Vue ({
                             el: '#app',
