@@ -43,7 +43,7 @@ $(function() {
            console.log(getApp);
 
             //получаем аватарки друзей
-            VK.api("users.get", {"user_ids": getApp,"fields": photo_100}, function (data){
+            VK.api("users.get", {"user_ids": getApp,"fields":"photo_100"}, function (data){
                     console.log(data);
                 }
             )
