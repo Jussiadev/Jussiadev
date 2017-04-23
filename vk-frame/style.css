@@ -1,5 +1,5 @@
 body {
-    background: url("fon_vk_app.jpg") no-repeat;
+    background: url("pjyedyestal.jpg") no-repeat;
     background-position: 0 -376px;
     background-color: #b9e27a;
 }
@@ -11,14 +11,14 @@ body {
 
 #first {
     position: absolute;
-    top: 25px;
+    top: 28px;
     left: 315px;
 
 }
 
 #second {
     position: absolute;
-    bottom: -205px;
+    bottom: 148px;
     left: 101px;
 }
 
