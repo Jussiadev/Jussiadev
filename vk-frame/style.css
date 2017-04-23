@@ -3,3 +3,24 @@ body {
     background-position: 0 -376px;
     background-color: #b9e27a;
 }
+
+.container {
+    height: 352px;
+}
+
+#relative {
+    position: relative;
+}
+
+#first {
+    position: absolute;
+}
+
+#second {
+    position: absolute;
+}
+
+#third {
+    position: absolute;
+}
+
