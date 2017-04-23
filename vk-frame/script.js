@@ -22,7 +22,11 @@ $(function() {
                         new Vue ({
                             el: '#app',
                             data: {
-                                items: photos
+                                photos: {
+                                    first: photos[0],
+                                    second: photos[1],
+                                    third: photos[2]
+                                }
                             }
                         });
                       //  break;
