@@ -37,18 +37,19 @@ $(function() {
         //}
 
         //друзья, у которых установлено данное приложение
+        var getApp;
         VK.api("friends.getAppUsers", function (data){
-           var getApp = data.response.join(',');
+           getApp = data.response.join(',');
            console.log(getApp);
 
-        }
-        );
+            //получаем аватарки друзей
+            VK.api("users.get", {"user_ids": getApp,"fields": photo_100}, function (data){
+                    console.log(data);
+                }
+            )
+        });
 
-        //получаем аватарки друзей
-        VK.api("users.get", {"user_ids": getApp,"fields": photo_100}, function (data){
-            console.log(data);
-            }
-        )
+
     }, function() {
         // API initialization failed
         // Can reload page here
