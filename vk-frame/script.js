@@ -23,9 +23,9 @@ $(function() {
                             el: '#app',
                             data: {
                                 photos: {
-                                    first: photos[0],
-                                    second: photos[1],
-                                    third: photos[2]
+                                    first: photos[0].image,
+                                    second: photos[1].image,
+                                    third: photos[2].image
                                 }
                             }
                         });
