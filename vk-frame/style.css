@@ -25,6 +25,8 @@ body {
 }
 
 .frame {
-    border: 1px solid #000;
+    border: 3px solid #000;
+    height: 100px;
+    width: 130px;
 }
 
