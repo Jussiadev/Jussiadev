@@ -4,24 +4,28 @@ body {
     background-color: #b9e27a;
 }
 
-.container {
-    height: 352px;
-}
-
 #relative {
     position: relative;
+    height: 352px;
 }
 
 #first {
     position: absolute;
+    top: 25px;
+    left: 315px;
+
 }
 
 #second {
     position: absolute;
+    bottom: -205px;
+    left: 101px;
 }
 
 #third {
     position: absolute;
+    top: 176px;
+    left: 536px;
 }
 
 .frame {
