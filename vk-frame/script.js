@@ -38,8 +38,16 @@ $(function() {
 
         //друзья, у которых установлено данное приложение
         VK.api("friends.getAppUsers", function (data){
-                console.log(data);
+           var getApp = data.response.join(',');
+           console.log(getApp);
+
         }
+        );
+
+        //получаем аватарки друзей
+        VK.api("users.get", {"user_ids": getApp,"fields": photo_100}, function (data){
+                var getApp = data.response;
+            }
         )
     }, function() {
         // API initialization failed
