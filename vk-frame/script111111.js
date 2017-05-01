@@ -1,14 +1,14 @@
-new Vue ({
+/*new Vue ({
     el: "#app",
     data: {
-        /*photos: {
+        photos: {
             first: false,
             second: false,
             third: false
         },
-        friends: []*/
+        friends: []
     }
-});
+});*/
 
 /*$(function() {
     VK.init(function() {
