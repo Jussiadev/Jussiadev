@@ -1,19 +1,19 @@
+var app = new Vue ({
+    el: '#app',
+    data: {
+        photos: {
+            first: null,
+            second: null,
+            third: null
+        },
+        friends: []
+    }
+});
+
 $(function() {
     VK.init(function() {
         //топ - 3 фотографий
         var myId = 32931152;
-
-        var app = new Vue ({
-            el: '#app',
-            data: {
-                photos: {
-                    first: null,
-                    second: null,
-                    third: null
-                },
-                friends: []
-            }
-        });
 
         loadPhoto(myId);
         appUsers();
