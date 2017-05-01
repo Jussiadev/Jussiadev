@@ -3,7 +3,6 @@ $(function() {
         //топ - 3 фотографий
         var myId = 32931152;
 
-
         var app = new Vue ({
             el: '#app',
             data: {
