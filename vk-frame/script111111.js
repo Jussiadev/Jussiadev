@@ -2,9 +2,9 @@ var app = new Vue ({
     el: '#app',
     data: {
         photos: {
-            first: null,
-            second: null,
-            third: null
+            first: '',
+            second: '',
+            third: ''
         },
         friends: []
     }
