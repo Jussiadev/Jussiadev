@@ -35,9 +35,9 @@ function loadPhoto(id) {
             photos = photos.sort(function(a, b) {
                 return b.likes - a.likes;
             });
-            app.photos.first = photos[0].image;
-            app.photos.second = photos[1].image;
-            app.photos.third = photos[2].image;
+            app.photos.first = 0; //photos[0].image;
+            app.photos.second = 1; //photos[1].image;
+            app.photos.third = 2;//photos[2].image;
             //  break;
             //}
         }
