@@ -45,9 +45,9 @@ function loadPhoto(id) {
     //}
 }
 
-function getFriends(user_ids) {
+function getFriends(user_ids) { console.log(user_ids);
     //получаем аватарки друзей
-    VK.api("users.get", {"user_ids": user_ids,"fields":"photo_100"}, function (data){
+    VK.api("users.get", {"user_ids": user_ids,"fields":"photo_100"}, function (data){console.log(data);
             var users = [];
             for (var i = 0, max = data.response.length; i < max; i++) {
                 users.push({
@@ -55,7 +55,8 @@ function getFriends(user_ids) {
                     "ava": data.response[i].photo_100
                 });
             }
-            friends = users;
+        console.log(users);
+            app.friends = users;
         }
     )
 }
