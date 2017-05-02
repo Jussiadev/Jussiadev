@@ -13,11 +13,9 @@ var app = new Vue ({
 $(function() {
     VK.init(function() {
         //топ - 3 фотографий
-        var myId = 32931152;
+        getMyId();
 
-        loadPhoto(myId);
         appUsers();
-
 
     }, function() {}, '5.63');
 
@@ -71,4 +69,14 @@ function appUsers() {
         var user_ids = data.response.join(',');
         getFriends(user_ids);
     });
+}
+
+function getMyId() {
+    //получаем id друзей
+    VK.api("users.get", function (data){
+            var id = data.response.id;
+            loadPhoto(id);
+
+        }
+    )
 }
