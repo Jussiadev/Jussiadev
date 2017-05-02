@@ -18,7 +18,12 @@ $(function() {
         loadPhoto(myId);
         appUsers();
 
+
     }, function() {}, '5.63');
+
+    $('#invite_friends').click( function() {
+        VK.callMethod("showInviteBox");
+    })
 });
 
 function loadPhoto(id) {
