@@ -74,7 +74,7 @@ function appUsers() {
 function getMyId() {
     //получаем id друзей
     VK.api("users.get", function (data){
-            var id = data.response.id;
+            var id = data.response[0].id;
             loadPhoto(id);
 
         }
