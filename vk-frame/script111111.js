@@ -51,8 +51,7 @@ function getFriends(user_ids) {
             var users = [];
             for (var i = 0, max = data.response.length; i < max; i++) {
                 users.push({
-                    "first_name": data.response[i].first_name,
-                    "second_name": data.response[i].last_name,
+                    "name": data.response[i].first_name + data.response[i].last_name,
                     "ava": data.response[i].photo_100
                 });
             }

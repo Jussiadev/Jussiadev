@@ -10,18 +10,22 @@
 
 <div id="app" class="container-fluid">
     <div id="relative">
-        <div id="first" class="frame"><img :src="photos.first"></div>
-        <div id="second" class="frame"><img :src="photos.second"></div>
-        <div id="third" class="frame"><img :src="photos.third"></div>
+        <div id="first" class="frame">
+            <img :src="photos.first">
+        </div>
+        <div id="second" class="frame">
+            <img :src="photos.second">
+        </div>
+        <div id="third" class="frame">
+            <img :src="photos.third">
+        </div>
     </div>
 
-    <div class="row">
-        <div class="col-sm-2"><img src=""></div>
-        <div class="col-sm-2"><img src=""></div>
-        <div class="col-sm-2"><img src=""></div>
-        <div class="col-sm-2"><img src=""></div>
-        <div class="col-sm-2"><img src=""></div>
-        <div class="col-sm-2"><img src=""></div>
+    <div class="row" v-for="friend in friends">
+        <div class="col-sm-2">
+            <img :src="friend.ava">
+            <p>{{ friend.name }}</p>
+        </div>
     </div>
 </div>
 
