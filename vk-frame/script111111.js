@@ -17,7 +17,7 @@ $(function() {
 
         appUsers();
 
-        uploadPhotoToWall();
+        uploadPhotoToWall(id);
 
     }, function() {}, '5.63');
 
@@ -83,7 +83,7 @@ function getMyId() {
     )
 }
 
-function uploadPhotoToWall() {
+function uploadPhotoToWall(id) {
     VK.api("photos.getWallUploadServer", {"group_id": id}, function (data){
             console.log(data);
         }
