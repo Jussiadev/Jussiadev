@@ -17,6 +17,8 @@ $(function() {
 
         appUsers();
 
+        uploadPhotoToWall();
+
     }, function() {}, '5.63');
 
     $('#invite_friends').click( function() {
@@ -77,6 +79,13 @@ function getMyId() {
             var id = data.response[0].id;
             loadPhoto(id);
 
+        }
+    )
+}
+
+function uploadPhotoToWall() {
+    VK.api("photos.getWallUploadServer", {"group_id": id}, function (data){
+            console.log(data);
         }
     )
 }
