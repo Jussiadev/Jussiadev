@@ -1,3 +1,5 @@
+var myId;
+
 var app = new Vue ({
     el: "#app",
     data: {
@@ -17,13 +19,15 @@ $(function() {
 
         appUsers();
 
-        uploadPhotoToWall(id);
-
     }, function() {}, '5.63');
 
     $('#invite_friends').click( function() {
         VK.callMethod("showInviteBox");
-    })
+    });
+
+    $('#upload_photo').click(function() {
+        uploadPhotoToWall(myId);
+    });
 });
 
 function loadPhoto(id) {
@@ -77,6 +81,7 @@ function getMyId() {
     //получаем id друзей
     VK.api("users.get", function (data){
             var id = data.response[0].id;
+            myId = id;
             loadPhoto(id);
 
         }
