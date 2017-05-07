@@ -21,8 +21,6 @@
         </div>
     </div>
 
-    <canvas id="drawingCanvas" width="400" height="400"> </canvas>
-
     <div class="row">
         <div class="col-sm-2" v-for="friend in friends">
             <img :src="friend.ava">
@@ -33,6 +31,8 @@
             <button class="btn btn-success" id="upload_photo">Рассказать друзьям</button>
         </div>
     </div>
+
+    <canvas id="drawingCanvas" width="400" height="400"> </canvas>
 </div>
 
 <script src="vue2.2.6.js"></script>
