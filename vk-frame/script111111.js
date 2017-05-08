@@ -158,7 +158,7 @@ function uploadPhotoToWall(id) {
 
                 var blob = dataURItoBlob(dataURL);
                 var fd = new FormData();
-                fd.append("photo", blob);
+                fd.append('photo', blob);
                 console.log(fd);
 
                 $.ajax({
@@ -166,6 +166,7 @@ function uploadPhotoToWall(id) {
                     data: fd,
                     processData: false,
                     contentType: false,
+                    crossDomain: true,
                     type: 'POST',
                     success: function(response){
                         console.log(response);
