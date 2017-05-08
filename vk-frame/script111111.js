@@ -164,6 +164,7 @@ function uploadPhotoToWall(id) {
                 $.ajax({
                     url: data.response.upload_url,
                     data: fd,
+                    dataType : "jsonp",
                     processData: false,
                     contentType: false,
                     crossDomain: true,
