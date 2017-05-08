@@ -103,36 +103,39 @@ function getMyId() {
 
 function uploadPhotoToWall(id) {
     VK.api("photos.getWallUploadServer", {"group_id": id}, function (data){
-                canvas = document.getElementById("drawingCanvas");
-                context = canvas.getContext("2d");
+        canvas = document.getElementById("drawingCanvas");
+        context = canvas.getContext("2d");
 
-                var img1 = new Image();
+        var img1 = new Image();
+        img1.crossOrigin = 'Anonymous';
 // Привязываем функцию к событию onload
 // Это указывает браузеру, что делать, когда изображение загружено
-                img1.onload = function() {
-                    context.drawImage(img1, 10,10,140,170);
-                };
+        img1.onload = function() {
+            context.drawImage(img1, 10,10,140,170);
+        };
 // Загружаем файл изображения
-                img1.src = app.photos.first;
+        img1.src = app.photos.first;
 
-                var img2 = new Image();
+        var img2 = new Image();
+        img2.crossOrigin = 'Anonymous';
 // Привязываем функцию к событию onload
 // Это указывает браузеру, что делать, когда изображение загружено
-                img2.onload = function() {
-                    context.drawImage(img2,200,10,140,170);
-                };
+        img2.onload = function() {
+            context.drawImage(img2,200,10,140,170);
+        };
 // Загружаем файл изображения
-                img2.src = app.photos.second;
+        img2.src = app.photos.second;
 // save canvas image as data url (png format by default)
 
         var img3 = new Image();
+        img3.crossOrigin = 'Anonymous';
 // Привязываем функцию к событию onload
 // Это указывает браузеру, что делать, когда изображение загружено
         img3.onload = function() {
             context.drawImage(img3, 10,10,140,170);
         };
 // Загружаем файл изображения
-        img1.src = app.photos.third;
+        img3.src = app.photos.third;
 
                 var dataURL = canvas.toDataURL();
 
