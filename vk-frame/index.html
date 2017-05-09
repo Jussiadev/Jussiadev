@@ -21,9 +21,9 @@
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-sm-2" v-for="friend in friends">
-            <img :src="friend.ava" class="photo-footer">
+    <div class="row" id="photo-footer">
+        <div class="col-sm-2 footer" v-for="friend in friends">
+            <img :src="friend.ava" class="img-footer">
             <p>{{ friend.name }}</p>
         </div>
         <div class="col-sm-2">

@@ -32,3 +32,19 @@ body {
 .frame {
     width: 134px;
 }
+
+#photo-footer {
+    margin-top: 133px;
+}
+
+.img-footer {
+    border: 2px solid #fff;
+    padding:0;
+    margin:0;
+    display:inline-block;
+    float:left;
+}
+
+.footer {
+
+}
