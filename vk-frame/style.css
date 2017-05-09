@@ -11,7 +11,6 @@ body {
     position: absolute;
     bottom: 115px;
     left: 133px;
-    width: 130px;
     border: 2px solid #dbad39;
 
 }
@@ -20,7 +19,6 @@ body {
     position: absolute;
     top: 97px;
     left: 306px;
-    width: 130px;
     border: 2px solid #b68b2e;
 }
 
@@ -28,7 +26,6 @@ body {
     position: absolute;
     top: 126px;
     left: 477px;
-    width: 130px;
     border: 2px solid #737373;
 }
 
