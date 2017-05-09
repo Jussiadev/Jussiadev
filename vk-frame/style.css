@@ -1,6 +1,5 @@
 body {
     background: url("fon.png") no-repeat;
-   /* background-position: 0 -376px;*/
 }
 
 #relative {
@@ -10,26 +9,24 @@ body {
 
 #first {
     position: absolute;
-    top: 28px;
-    left: 315px;
+    bottom: 115px;
+    left: 133px;
+    border: 2px solid #dbad39;
 
 }
 
 #second {
     position: absolute;
-    bottom: 148px;
-    left: 101px;
+    top: 97px;
+    left: 306px;
+    border: 2px solid #b68b2e;
 }
 
 #third {
     position: absolute;
-    top: 176px;
-    left: 536px;
+    top: 126px;
+    left: 477px;
+    border: 2px solid #737373;
 }
 
-.frame {
-    border: 3px solid #000;
-    height: 100px;
-    width: 130px;
-}
 
