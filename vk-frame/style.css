@@ -12,7 +12,7 @@ body {
     position: absolute;
     bottom: 115px;
     left: 133px;
-    border: 2px solid #dbad39;
+    text-align: center;
 
 }
 
@@ -20,13 +20,25 @@ body {
     position: absolute;
     top: 97px;
     left: 306px;
-    border: 2px solid #b68b2e;
+    text-align: center;
 }
 
 #third {
     position: absolute;
     top: 126px;
     left: 477px;
+    text-align: center;
+}
+
+#top-photo-1 {
+    border: 2px solid #dbad39;
+}
+
+#top-photo-2 {
+    border: 2px solid #b68b2e;
+}
+
+#top-photo-3{
     border: 2px solid #737373;
 }
 
@@ -47,6 +59,3 @@ body {
     display:inline-block;
 }
 
-.footer {
-
-}
