@@ -5,26 +5,31 @@ body {
 #relative {
     position: relative;
     height: 352px;
-    text-align: center;
 }
 
 #first {
     position: absolute;
     text-align: center;
-    margin-left: 473px;
+    left: 474px;
+    width: 138px;
+    bottom: 124px;
 
 }
 
 #second {
     position: absolute;
     text-align: center;
-    margin-left: 302px;
+    left: 303px;
+    width: 138px;
+    bottom: 153px;
 }
 
 #third {
     position: absolute;
     text-align: center;
-    margin-left: 131px;
+    left: 142px;
+    width: 138px;
+    bottom: 115px;
 }
 
 #top-photo-1 {
