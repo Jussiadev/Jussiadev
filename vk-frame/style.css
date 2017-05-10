@@ -35,12 +35,14 @@ body {
 
 #photo-footer {
     margin-top: 133px;
+    padding-left: 12px;
 }
 
 .img-footer {
     border: 2px solid #fff;
     padding:0;
     margin:0;
+    margin-right: 4px;
     display:inline-block;
 }
 
