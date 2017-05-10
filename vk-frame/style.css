@@ -5,6 +5,7 @@ body {
 #relative {
     position: relative;
     height: 352px;
+    text-align: center;
 }
 
 #first {
