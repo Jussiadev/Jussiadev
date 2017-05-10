@@ -65,7 +65,7 @@ body {
 }
 
 .cross {
-    cursor: crosshair;
+    cursor: pointer;
 }
 
 .img-footer :hover {
