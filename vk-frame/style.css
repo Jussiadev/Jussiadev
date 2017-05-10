@@ -68,6 +68,6 @@ body {
     cursor: pointer;
 }
 
-.img-footer :hover {
+.img-footer:hover {
     border: 2px solid #000;
 }
