@@ -21,7 +21,9 @@ $(function() {
 
     }, function() {}, '5.63');
 
-    $('[data-toggle="tooltip"]').tooltip();
+    $('[data-toggle="tooltip"]').tooltip({
+        placement : 'top'
+    });
 
     $('#invite_friends').click( function() {
         VK.callMethod("showInviteBox");
