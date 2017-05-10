@@ -22,14 +22,9 @@
     </div>
 
     <div class="row" id="photo-footer">
-        <div class="col-sm-2 footer" v-for="friend in friends">
-            <img :src="friend.ava" class="img-footer">
-            <p>{{ friend.name }}</p>
-        </div>
-        <div class="col-sm-2">
+            <img :src="friend.ava" class="img-footer" v-for="friend in friends">
             <button class="btn btn-success" id="invite_friends">Пригласить друзей</button>
             <button class="btn btn-success" id="upload_photo">Рассказать друзьям</button>
-        </div>
     </div>
 
     <canvas id="drawingCanvas" width="400" height="400"> </canvas>
