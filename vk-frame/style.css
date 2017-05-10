@@ -11,34 +11,34 @@ body {
 #first {
     position: absolute;
     text-align: center;
+    margin-left: 473px;
 
 }
 
 #second {
     position: absolute;
     text-align: center;
+    margin-left: 302px;
 }
 
 #third {
     position: absolute;
     text-align: center;
+    margin-left: 131px;
 }
 
 #top-photo-1 {
-    bottom: 115px;
-    left: 133px;
+    margin-top: 126px;
     border: 2px solid #dbad39;
 }
 
 #top-photo-2 {
-    top: 97px;
-    left: 306px;
+    margin-top: 96px;
     border: 2px solid #b68b2e;
 }
 
 #top-photo-3{
-    top: 126px;
-    left: 477px;
+    margin-top: 134px;
     border: 2px solid #737373;
 }
 
