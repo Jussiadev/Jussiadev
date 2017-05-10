@@ -10,35 +10,35 @@ body {
 
 #first {
     position: absolute;
-    bottom: 115px;
-    left: 133px;
     text-align: center;
 
 }
 
 #second {
     position: absolute;
-    top: 97px;
-    left: 306px;
     text-align: center;
 }
 
 #third {
     position: absolute;
-    top: 126px;
-    left: 477px;
     text-align: center;
 }
 
 #top-photo-1 {
+    bottom: 115px;
+    left: 133px;
     border: 2px solid #dbad39;
 }
 
 #top-photo-2 {
+    top: 97px;
+    left: 306px;
     border: 2px solid #b68b2e;
 }
 
 #top-photo-3{
+    top: 126px;
+    left: 477px;
     border: 2px solid #737373;
 }
 
