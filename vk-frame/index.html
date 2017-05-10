@@ -22,8 +22,9 @@
     </div>
 
     <div class="row" id="photo-footer">
-            <img :src="friend.ava" class="img-footer" v-for="friend in friends">
-            <img src="buildMar.png" id="invite_friends">
+            <img :src="friend.ava" class="img-footer" v-for="friend in friends" data-toggle="tooltip" data-placement="top"
+                 :title="friend.name">
+            <img src="buildMar.png" id="invite_friends" class="cross">
             <button class="btn btn-success" id="upload_photo">Рассказать друзьям</button>
     </div>
 
