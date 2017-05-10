@@ -21,10 +21,6 @@ $(function() {
 
     }, function() {}, '5.63');
 
-    $('[data-toggle="tooltip"]').tooltip({
-        placement : 'top'
-    });
-
     $('#invite_friends').click( function() {
         VK.callMethod("showInviteBox");
     });
@@ -61,14 +57,17 @@ function loadPhoto(id) {
 function getFriends(user_ids) {
     //получаем аватарки друзей
     VK.api("users.get", {"user_ids": user_ids,"fields":"photo_100"}, function (data){
-            var users = [];
-            for (var i = 0, max = data.response.length; i < max; i++) {
-                users.push({
-                    "name": data.response[i].first_name + ' ' + data.response[i].last_name,
-                    "ava": data.response[i].photo_100
-                });
-            }
-            app.friends = users;
+        var users = [];
+        for (var i = 0, max = data.response.length; i < max; i++) {
+            users.push({
+                "name": data.response[i].first_name + ' ' + data.response[i].last_name,
+                "ava": data.response[i].photo_100
+            });
+        }
+        app.friends = users;
+        $('[data-toggle="tooltip"]').tooltip({
+            placement : 'top'
+        });
         }
     )
 }
