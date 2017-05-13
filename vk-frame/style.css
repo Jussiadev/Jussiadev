@@ -12,7 +12,7 @@ body {
     text-align: center;
     left: 294px;
     width: 138px;
-    bottom: 182px;
+    bottom: 199px;
 }
 
 #second {
@@ -20,7 +20,7 @@ body {
     text-align: center;
     left: 469px;
     width: 138px;
-    bottom: 152px;
+    bottom: 169px;
 }
 
 #third {
@@ -28,7 +28,7 @@ body {
     text-align: center;
     left: 133px;
     width: 138px;
-    bottom: 142px;
+    bottom: 162px;
 }
 
 #top-photo-1 {
@@ -54,7 +54,7 @@ body {
 }
 
 #photo-footer {
-    margin-top: 26px;
+    margin-top: 31px;
     padding-left: 4px;
 }
 
@@ -80,9 +80,12 @@ p {
     text-align: center;
     text-shadow: #000 0 0 5px, 0 0 0em #fff;
     color: #fff;
-    margin-top: 23px;
+    margin-top: 6px;
 }
 
 #upload_photo {
     font-family: 'Bad Script', cursive;
+    width: 239px;
+    height: 43px;
+    font-size: 23px;
 }
