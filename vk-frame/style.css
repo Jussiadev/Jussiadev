@@ -52,8 +52,8 @@ body {
 }
 
 #photo-footer {
-    margin-top: 133px;
-    padding-left: 12px;
+    margin-top: 26px;
+    padding-left: 4px;
 }
 
 .img-footer {
@@ -76,7 +76,7 @@ p {
     font-family: 'Alice', serif;
     font-size: 40pt;
     text-align: center;
-    /*text-shadow:  0px 1px 5px #d8c0d7, 0 0 1em #1d0f29;*/
     text-shadow: #000 0 0 5px, 0 0 0em #fff;
     color: #fff;
+    margin-top: 23px;
 }
