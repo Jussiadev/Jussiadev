@@ -34,16 +34,19 @@ body {
 #top-photo-1 {
     margin-top: 126px;
     border: 2px solid #dbad39;
+    box-shadow: 0 0 12px 1px #fff;
 }
 
 #top-photo-2 {
     margin-top: 96px;
     border: 2px solid #b68b2e;
+    box-shadow: 0 0 12px 1px #fff;
 }
 
 #top-photo-3{
     margin-top: 134px;
     border: 2px solid #737373;
+    box-shadow: 0 0 12px 1px #fff;
 }
 
 .frame {
