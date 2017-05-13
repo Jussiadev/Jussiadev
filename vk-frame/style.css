@@ -71,3 +71,11 @@ body {
 .img-footer:hover {
     border: 2px solid #000;
 }
+
+p {
+    font-family: 'Alice', serif;
+    font-size: 40pt;
+    text-align: center;
+    text-shadow: 1px 3px 2px #ded1f5, 0 0 1em #443947;
+    color: black;
+}

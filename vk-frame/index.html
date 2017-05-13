@@ -5,6 +5,7 @@
     <title>My aplication</title>
     <link rel="stylesheet" href="bootstrap-combined.min.css">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Alice|Gabriela|Kelly+Slab|Neucha|Old+Standard+TT|Playfair+Display+SC" rel="stylesheet">
 </head>
 <body>
 
@@ -20,6 +21,8 @@
             <img :src="photos.third" id="top-photo-3">
         </div>
     </div>
+
+    <p>Популярные фото - Топ 3</p>
 
     <div class="row" id="photo-footer">
             <img :src="friend.ava" class="img-footer cross" v-for="friend in friends" data-toggle="tooltip" data-placement="top"
