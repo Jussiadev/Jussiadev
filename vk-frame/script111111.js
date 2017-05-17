@@ -206,7 +206,7 @@ function probnaya(id) {
             formData.append('photo', blob);
 
             var xhr = new XMLHttpRequest();
-            xhr.open( 'POST', wallUploadUrl, true );
+            xhr.open( 'POST', data.response.upload_url, true );
             xhr.onload = xhr.onerror = function() {
                 console.log( xhr.responseText )
                 // тут будет ответ от ВК, который надо использовать в сохранении фото в альбом или на стену
