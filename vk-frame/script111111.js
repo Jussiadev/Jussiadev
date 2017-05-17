@@ -208,7 +208,7 @@ function probnaya(id) {
             var xhr = new XMLHttpRequest();
             xhr.open( 'POST', data.response.upload_url, true );
             xhr.onload = xhr.onerror = function() {
-                console.log( xhr.responseText )
+                //console.log( xhr.responseText )
                 // тут будет ответ от ВК, который надо использовать в сохранении фото в альбом или на стену
             };
             xhr.send( formData )
