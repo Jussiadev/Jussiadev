@@ -180,7 +180,7 @@ function uploadPhotoToWall(id) {
             });
 }
 
-function probnaya() {
+function probnaya(id) {
     var canvas = document.getElementById("drawingCanvas");
     var ctx = canvas.getContext("2d");
 
