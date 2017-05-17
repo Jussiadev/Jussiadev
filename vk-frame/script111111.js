@@ -201,17 +201,18 @@ function probnaya(id) {
 
     VK.api("photos.getWallUploadServer", {"group_id": id}, function (data){
         // Потом:
-        var blob = canvas.toBlob( callback, 'image/jpeg', 0.85);
-// внутри callback'а:
-        var formData = new FormData();
-        formData.append('photo', blob);
+        var blob = canvas.toBlob( function (blob) {
+            var formData = new FormData();
+            formData.append('photo', blob);
 
-        var xhr = new XMLHttpRequest();
-        xhr.open( 'POST', wallUploadUrl, true );
-        xhr.onload = xhr.onerror = function() {
-            console.log( xhr.responseText )
-            // тут будет ответ от ВК, который надо использовать в сохранении фото в альбом или на стену
-        };
-        xhr.send( formData )
+            var xhr = new XMLHttpRequest();
+            xhr.open( 'POST', wallUploadUrl, true );
+            xhr.onload = xhr.onerror = function() {
+                console.log( xhr.responseText )
+                // тут будет ответ от ВК, который надо использовать в сохранении фото в альбом или на стену
+            };
+            xhr.send( formData )
+        }, 'image/jpeg', 0.85);
+// внутри callback'а:
     });
 }
