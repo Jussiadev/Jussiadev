@@ -181,7 +181,7 @@ function uploadPhotoToWall(id) {
 }
 
 function probnaya() {
-    var canvas = document.getElementById("canvas");
+    var canvas = document.getElementById("drawingCanvas");
     var ctx = canvas.getContext("2d");
 
     var img = new Image();
