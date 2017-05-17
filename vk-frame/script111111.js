@@ -189,7 +189,7 @@ function probnaya(id) {
 // Привязываем функцию к событию onload
 // Это указывает браузеру, что делать, когда изображение загружено
     img1.onload = function() {
-        context.drawImage(img1, 10,10,140,170);
+        ctx.drawImage(img1, 10,10,140,170);
     };
 // Загружаем файл изображения
     img1.src = app.photos.first;
