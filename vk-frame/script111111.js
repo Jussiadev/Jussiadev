@@ -184,10 +184,20 @@ function probnaya(id) {
     var canvas = document.getElementById("drawingCanvas");
     var ctx = canvas.getContext("2d");
 
-    var img = new Image();
+    var img1 = new Image();
+    img1.crossOrigin = 'Anonymous';
+// Привязываем функцию к событию onload
+// Это указывает браузеру, что делать, когда изображение загружено
+    img1.onload = function() {
+        context.drawImage(img1, 10,10,140,170);
+    };
+// Загружаем файл изображения
+    img1.src = app.photos.first;
+
+    /*var img = new Image();
     img.crossOrigin = 'Anonymous';
     img.src = "http://lorempixel.com/300/300/cats/";
-    img.onload = function(){ ctx.drawImage(img, 0, 0) };
+    img.onload = function(){ ctx.drawImage(img, 0, 0) };*/
 
     VK.api("photos.getWallUploadServer", {"group_id": id}, function (data){
         // Потом:
