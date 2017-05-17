@@ -201,7 +201,7 @@ function probnaya(id) {
 
     VK.api("photos.getWallUploadServer", {"group_id": id}, function (data){
         // Потом:
-        var blob = canvas.toBlob( function (blob) {
+        var blob = canvas.toBlob( function () {
             var formData = new FormData();
             formData.append('photo', blob);
 
