@@ -199,20 +199,26 @@ function probnaya(id) {
     img.src = "http://lorempixel.com/300/300/cats/";
     img.onload = function(){ ctx.drawImage(img, 0, 0) };*/
 
-    VK.api("photos.getWallUploadServer", {"group_id": id}, function (data){
+    VK.api("photos.getWallUploadServer", {"group_id": id}, function (data) {
         // Потом:
         var blob = canvas.toBlob( function () {
             var formData = new FormData();
             formData.append('photo', blob);
 
             var xhr = new XMLHttpRequest();
-            xhr.open( 'POST', data.response.upload_url, true );
+            var myOtherUrl = data.response.upload_url;
+            console.log(myOtherUrl);
+            xhr.open( 'POST', myOtherUrl, true );
             xhr.onload = xhr.onerror = function() {
-                //console.log( xhr.responseText )
+                console.log( xhr.responseText )
                 // тут будет ответ от ВК, который надо использовать в сохранении фото в альбом или на стену
             };
             xhr.send( formData )
         }, 'image/jpeg', 0.85);
 // внутри callback'а:
     });
+}
+
+function jsonpUploadPhoto() {
+    
 }
