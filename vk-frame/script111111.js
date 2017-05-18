@@ -200,8 +200,6 @@ function probnaya(id) {
     img.onload = function(){ ctx.drawImage(img, 0, 0) };*/
 
     VK.api("photos.getWallUploadServer", {"group_id": id}, function (data) {
-        var myOtherUrl = data.response.upload_url;
-        console.log(myOtherUrl);
         // Потом:
         var blob = canvas.toBlob( function () {
             var formData = new FormData();
