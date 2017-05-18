@@ -207,15 +207,15 @@ function probnaya(id) {
             var formData = new FormData();
             formData.append('photo', blob);
 
-            /*var xhr = new XMLHttpRequest();
-            var myOtherUrl = data.response.upload_url;
+            var xhr = new XMLHttpRequest();
+            var myOtherUrl = 'http://selfie-store.ru/vk-upload-photo.php?upload_url=' + encodeURIComponent(data.response.upload_url);
             console.log(myOtherUrl);
             xhr.open( 'POST', myOtherUrl, true );
             xhr.onload = xhr.onerror = function() {
                 console.log( xhr.responseText )
                 // тут будет ответ от ВК, который надо использовать в сохранении фото в альбом или на стену
             };
-            xhr.send( formData )*/
+            xhr.send( formData )
         }, 'image/jpeg', 0.85);
 // внутри callback'а:
     });
