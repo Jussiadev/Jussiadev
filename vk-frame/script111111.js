@@ -26,8 +26,8 @@ $(function() {
     });
 
     $('#upload_photo').click(function() {
-        //uploadPhotoToWall(myId);
-        probnaya(myId);
+        uploadPhotoToWall(myId);
+        //probnaya(myId);
     });
 });
 
@@ -166,9 +166,9 @@ function uploadPhotoToWall(id) {
                 console.log(fd);
 
                 $.ajax({
-                    url: data.response.upload_url,
+                    url: d'https://selfie-store.ru/vk-upload-photo.php?upload_url=' + encodeURIComponent(data.response.upload_url),
                     data: fd,
-                    dataType : "jsonp",
+                    dataType : "json",
                     processData: false,
                     contentType: false,
                     crossDomain: true,
