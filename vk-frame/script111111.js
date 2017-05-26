@@ -219,6 +219,20 @@ function probnaya(id) {
     });
 }
 
+function forForm() {
+    // создать объект для формы
+    var formData = new FormData(document.forms.person);
+
+    // добавить к пересылке ещё пару ключ - значение
+    formData.append("patronym", "Робертович");
+
+    // отослать
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "'https://selfie-store.ru/vk-upload-photo.php?upload_url=' + encodeURIComponent(data.response.upload_url)");
+    xhr.send(formData);
+
+}
+
 function jsonpUploadPhoto() {
     
 }
