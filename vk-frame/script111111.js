@@ -206,7 +206,7 @@ function probnaya(id) {
             formData.append('photo', blob);
 
             var xhr = new XMLHttpRequest();
-            var myOtherUrl = 'http://selfie-store.ru/vk-upload-photo.php?upload_url=' + encodeURIComponent(data.response.upload_url);
+            var myOtherUrl = 'https://selfie-store.ru/vk-upload-photo.php?upload_url=' + encodeURIComponent(data.response.upload_url);
             console.log(myOtherUrl);
             xhr.open( 'POST', myOtherUrl, true );
             xhr.onload = xhr.onerror = function() {

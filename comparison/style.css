@@ -1,0 +1,49 @@
+#comparision .col-md-2 {
+    border-top: 1px solid rgb(240,240,240);
+}
+
+.head_image {
+    height: 80px;
+    width: 80px;
+}
+
+.head{
+    height:172px;
+}
+
+.margin-top-10 {
+    margin-top: 10px;
+}
+
+.col-md-2:first-of-type p.property-value {
+    margin-top: 0;
+}
+
+.property-value {
+    margin-top: 40px;
+    color: #404040;
+}
+
+.property-name {
+    font: 11px 'Verdana',sans-serif;
+    text-transform: uppercase;
+    color: gray;
+}
+
+#comparision .row {
+    position: relative;
+}
+
+#comparision .row:hover {
+    background: #f8f8f8;
+}
+
+#comparision .row:hover:after, #comparision .row:hover:before {
+    background: #f0f0f0;
+    z-index: 3;
+}
+
+#comparision .row:hover:after {
+    top: auto;
+    bottom: -1px;
+}
