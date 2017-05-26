@@ -166,7 +166,7 @@ function uploadPhotoToWall(id) {
                 console.log(fd);
 
                 $.ajax({
-                    url: d'https://selfie-store.ru/vk-upload-photo.php?upload_url=' + encodeURIComponent(data.response.upload_url),
+                    url: 'https://selfie-store.ru/vk-upload-photo.php?upload_url=' + encodeURIComponent(data.response.upload_url),
                     data: fd,
                     dataType : "json",
                     processData: false,
