@@ -1,14 +1,100 @@
 body {
-    background-image: url(background.jpg);
+    background-image: url(background-1.png);
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-}
-
-.main {
-    margin-top: 58px;
-
+    background-attachment: fixed;
 }
 
 .thumbnail {
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    height: 529px
+
 }
 
+.header {
+    background-color: rgba(255,255,255,0.5);
+    height: 75px;
+}
+
+.head-name {
+    color: #fff;
+    font-size: 44px;
+    margin-top: 5px;
+    font-family: 'Kameron', serif;
+    text-shadow: -1px 1px 0 #696969, 1px 1px 0 #696969, -1px 1px 0 #696969, 3px 2px 0 #696969;
+
+}
+
+#center-name {
+    font-family: 'Kurale', serif;
+    color: #fff;
+    text-align: center;
+    font-size: 93px;
+    text-shadow: -1px 1px 0 #696969, 1px 1px 0 #696969, -1px 1px 0 #696969, 3px 2px 0 #696969;
+    margin-bottom: 70px;
+    margin-top: 0;
+}
+
+.card {
+    margin: 140px 0;
+    text-align: center;
+}
+
+.font {
+    font-family: 'Istok Web', sans-serif;
+    color: #fff;
+    text-align: center;
+    text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, -1px 1px 0 #000, 1px 2px 0 #000;
+}
+
+#prof {
+    font-size: 43px;
+    margin-bottom: 19px;
+}
+
+#things {
+    font-size: 31px;
+    margin-top: 12px;
+}
+
+.mail {
+    font-size: 32px;
+    color: #00CC00;
+    text-decoration: none !important;
+}
+
+.mail:hover {
+    color: #99FF66;
+}
+
+.logo{
+    height: 41px;
+    width: 44px;
+    margin-top: 16px;
+    opacity: 0.9;
+    margin-right: 6px;
+}
+
+.logo:hover {
+    opacity: 1;
+}
+
+.main-logo {
+    text-align: right;
+}
+
+.main-img {
+    width: 945px !important;
+    height: 529px !important;
+}
+
+p, b {
+    font-family: 'Istok Web', sans-serif;
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+.margin {
+    margin-bottom: 20px;
+}
