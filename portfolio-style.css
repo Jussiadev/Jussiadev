@@ -19,7 +19,7 @@ body {
 
 .head-name {
     color: #fff;
-    font-size: 44px;
+    font-size: 2.3vw;
     margin-top: 5px;
     font-family: 'Kameron', serif;
     text-shadow: -1px 1px 0 #696969, 1px 1px 0 #696969, -1px 1px 0 #696969, 3px 2px 0 #696969;
@@ -30,7 +30,7 @@ body {
     font-family: 'Kurale', serif;
     color: #fff;
     text-align: center;
-    font-size: 93px;
+    font-size: 5vw;
     text-shadow: -1px 1px 0 #696969, 1px 1px 0 #696969, -1px 1px 0 #696969, 3px 2px 0 #696969;
     margin-bottom: 70px;
     margin-top: 0;
@@ -49,17 +49,17 @@ body {
 }
 
 #prof {
-    font-size: 43px;
+    font-size: 2.55vw;
     margin-bottom: 19px;
 }
 
 #things {
-    font-size: 31px;
+    font-size: 1.6vw;
     margin-top: 12px;
 }
 
 .mail {
-    font-size: 32px;
+    font-size: 1.7vw;
     color: #00CC00;
     text-decoration: none !important;
 }
