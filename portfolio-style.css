@@ -19,18 +19,18 @@ body {
 
 .head-name {
     color: #fff;
-    font-size: 2.3vw;
+    font-size: 44px;
     margin-top: 5px;
-    font-family: 'Kameron', serif;
+    font-family: 'Cormorant SC', serif;
     text-shadow: -1px 1px 0 #696969, 1px 1px 0 #696969, -1px 1px 0 #696969, 3px 2px 0 #696969;
 
 }
 
 #center-name {
-    font-family: 'Kurale', serif;
+    font-family: 'Cormorant SC', serif;
     color: #fff;
     text-align: center;
-    font-size: 5vw;
+    font-size: 4.9vw;
     text-shadow: -1px 1px 0 #696969, 1px 1px 0 #696969, -1px 1px 0 #696969, 3px 2px 0 #696969;
     margin-bottom: 70px;
     margin-top: 0;
@@ -42,7 +42,7 @@ body {
 }
 
 .font {
-    font-family: 'Istok Web', sans-serif;
+    font-family: 'Cormorant SC', serif;
     color: #fff;
     text-align: center;
     text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, -1px 1px 0 #000, 1px 2px 0 #000;
@@ -90,7 +90,7 @@ body {
 }
 
 p, b {
-    font-family: 'Istok Web', sans-serif;
+    font-family: 'Cormorant SC', serif;
     font-size: 22px;
     line-height: 1.5;
 }

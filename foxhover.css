@@ -27,7 +27,7 @@
   height: 100%;
   color: #fff;
   text-align: center;
-  font-family: 'Lato', sans-serif; /* replace with your own font-family if you want */
+  font-family: 'Cormorant SC', serif; /* replace with your own font-family if you want */
   display: flex;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -44,7 +44,7 @@
 }
 
 .effect .caption h1 {
-  font-family: 'Montserrat', sans-serif; /* replace with your own font-family if you want */
+  font-family: 'Cormorant SC', serif; /* replace with your own font-family if you want */
   margin: 0px;
   font-size: 36px;
   font-weight: 600;
