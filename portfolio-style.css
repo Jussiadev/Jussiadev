@@ -22,7 +22,7 @@ body {
     font-size: 44px;
     margin-top: 5px;
     font-family: 'Cormorant SC', serif;
-    text-shadow: -1px 1px 0 #696969, 1px 1px 0 #696969, -1px 1px 0 #696969, 3px 2px 0 #696969;
+    /*text-shadow: -1px 1px 0 #696969, 1px 1px 0 #696969, -1px 1px 0 #696969, 3px 2px 0 #696969;*/
 
 }
 
@@ -45,7 +45,7 @@ body {
     font-family: 'Cormorant SC', serif;
     color: #fff;
     text-align: center;
-    text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, -1px 1px 0 #000, 1px 2px 0 #000;
+    /*text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, -1px 1px 0 #000, 1px 2px 0 #000;*/
 }
 
 #prof {
