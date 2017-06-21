@@ -22,7 +22,7 @@ body {
     font-size: 44px;
     margin-top: 5px;
     font-family: 'Cormorant SC', serif;
-    /*text-shadow: -1px 1px 0 #696969, 1px 1px 0 #696969, -1px 1px 0 #696969, 3px 2px 0 #696969;*/
+    text-shadow: -1px 1px 0 #696969, 1px 1px 0 #696969, -1px 1px 0 #696969, 1px 1px 0 #696969;
 
 }
 
@@ -31,7 +31,7 @@ body {
     color: #fff;
     text-align: center;
     font-size: 4.9vw;
-    text-shadow: -1px 1px 0 #696969, 1px 1px 0 #696969, -1px 1px 0 #696969, 3px 2px 0 #696969;
+    text-shadow: -1px 1px 0 #696969, 1px 1px 0 #696969, -1px 1px 0 #696969, 1px 1px 0 #696969;
     margin-bottom: 70px;
     margin-top: 0;
 }
@@ -62,6 +62,7 @@ body {
     font-size: 1.7vw;
     color: #00CC00;
     text-decoration: none !important;
+    text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, -1px 1px 0 #000, 1px 2px 0 #000;
 }
 
 .mail:hover {
