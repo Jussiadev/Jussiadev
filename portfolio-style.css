@@ -70,15 +70,27 @@ body {
 }
 
 .logo{
-    height: 41px;
-    width: 44px;
-    margin-top: 16px;
-    opacity: 0.9;
+    height: auto;
+    width: 34px;
+    margin-top: 21px;
     margin-right: 6px;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: url(grayscale.svg#greyscale); /* Firefox 4+ */
+    filter: gray; /* IE 6-9 */
+    -webkit-filter: grayscale(1);
 }
 
 .logo:hover {
-    opacity: 1;
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    filter: none;
+    -webkit-filter: grayscale(0);
 }
 
 .main-logo {
