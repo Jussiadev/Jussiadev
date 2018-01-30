@@ -1,0 +1,6 @@
+.nuxt
+node_modules
+.idea
+dist
+front-end.iml
+gulpfile.js

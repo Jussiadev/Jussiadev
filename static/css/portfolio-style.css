@@ -1,0 +1,145 @@
+/*body {*/
+    /*background-image: url(http://www.wallpapers4u.org/wp-content/uploads/pixels_shadow_color_background_18448_1920x1080.jpg);*/
+    /*background-position: center;*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
+    /*background-attachment: fixed;*/
+/*}*/
+
+#section0 {
+    background-image: url(https://jonny.me/2.jpg);
+}
+
+.header {
+    background-color: rgba(255,255,255,0.5);
+    position: fixed;
+    top: 0;
+    /*height: 66px;*/
+    margin-bottom: 20px;
+    /*z-index: 0 !important;*/
+}
+.nav {
+    font-family: 'Arsenal', sans-serif;
+}
+
+.head-name {
+    color: #fff;
+    font-size: 44px;
+    margin-top: 5px;
+    font-family: 'Arsenal', sans-serif;
+
+}
+
+.letter {
+    color: #ff3d00!important;
+}
+
+.logotip {
+    width: 150px;
+    height: auto;
+    margin-top: 7px;
+}
+
+.col-ava {
+    width: 400px!important;
+}
+
+#center-name {
+    font-family: 'Arsenal', sans-serif;
+    color: #fff;
+    text-align: center;
+    font-size: 4.9vw;
+    margin-bottom: 70px;
+    margin-top: 0;
+}
+
+.card {
+    margin: 140px 0;
+    text-align: center;
+}
+
+.chip {
+    margin-bottom: 9px!important;
+    margin-right: 6px!important;
+    border-radius: 4px!important;
+}
+
+.font {
+    font-family: 'Arsenal', sans-serif;
+    color: #fff;
+    text-align: center;
+    font-size: 26px;
+    /*text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, -1px 1px 0 #000, 1px 2px 0 #000;*/
+}
+
+.main-logo {
+    text-align: right;
+}
+
+.main-img {
+    width: 945px !important;
+    height: 529px !important;
+}
+
+p, b {
+    font-family: 'Arsenal', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: 0px;
+}
+
+a {
+    color: black!important;
+}
+
+.avatar {
+    width: 300px;
+    height: 300px;
+    margin-top: 134px;
+    margin-left: 65px;
+    background-image: url("../image/ava.jpg");
+    background-repeat: no-repeat;
+    background-position: -2px -9px;
+    border-radius: 5px;
+    background-size: 100%;
+}
+
+.blur {
+    display: block;
+    -webkit-filter: blur(15px);
+    -moz-filter: blur(15px);
+    -o-filter: blur(15px);
+    -ms-filter: blur(15px);
+    filter: blur(10px);
+}
+
+.caption {
+    z-index: 100;
+    /*margin-top: 147px;*/
+    margin-left: 20px;
+    color: black;
+    width: 100%;
+}
+
+.text p, .text b {
+    font-family: 'Roboto Condensed', sans-serif;
+    /*font-family: 'Open Sans', sans-serif;*/
+    margin-top: 0px;
+}
+
+.view {
+    width: 26px;
+    height: auto;
+    margin-right: 22px;
+    margin-bottom: -8px;
+}
+
+.color {
+    color: #ff3d00;
+}
+
+.world {
+    width: 10px;
+    height: auto;
+    margin-right: 5px;
+}
