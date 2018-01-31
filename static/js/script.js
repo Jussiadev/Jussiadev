@@ -1,7 +1,7 @@
 $(document).ready(function() {
     $('#fullpage').fullpage({
         navigation: true,
-        anchors: ['firstPage', 'secondPage', 'thirdPage', 'thirdPage', 'thirdPage', 'thirdPage', 'thirdPage', 'thirdPage', 'fourthPage'],
+        anchors: ['firstPage', 'secondPage', 'thirdPage'],
         navigationPosition: 'right',
         navigationTooltips: ['Главная', 'Обо мне'],
         fitToSection: false,

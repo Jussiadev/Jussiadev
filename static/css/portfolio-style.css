@@ -143,3 +143,7 @@ a {
     height: auto;
     margin-right: 5px;
 }
+
+.btn:focus {
+    background-color: #ff3d00!important;
+}
